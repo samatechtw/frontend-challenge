@@ -1,0 +1,57 @@
+{
+  "name": "frontend-challenge",
+  "version": "1.0.0",
+  "description": "SamaTech Frontend Challenge",
+  "private": true,
+  "engines": {
+    "node": ">=12.20.0",
+    "npm": ">=6.14.8"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "./node_modules/eslint/bin/eslint.js --ext .js,.vue src",
+    "lint:style": "./node_modules/stylelint/bin/stylelint.js \"**/src/**/*.{css,vue}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samatechtw/frontend-challenge.git"
+  },
+  "keywords": [
+    "frontend",
+    "challenge",
+    "Vue3",
+    "Vite",
+    "NFT"
+  ],
+  "author": "SamaTech",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samatechtw/frontend-challenge/issues"
+  },
+  "homepage": "https://github.com/samatechtw/frontend-challenge#readme",
+  "dependencies": {
+    "@sampullman/vue3-fetch-api": "0.5.0",
+    "date-fns": "^2.23.0",
+    "snarkdown": "^2.0.0",
+    "vue": "^3.2.2",
+    "vue-i18n": "^9.2.0-beta.2",
+    "vue-router": "^4.0.11"
+  },
+  "devDependencies": {
+    "@intlify/eslint-plugin-vue-i18n": "^0.12.0",
+    "@samatech/postcss-basics": "0.4.2",
+    "@vitejs/plugin-vue": "^1.4.0",
+    "@vue/compiler-sfc": "^3.2.2",
+    "eslint": "^7.32.0",
+    "eslint-plugin-import": "^2.24.0",
+    "eslint-plugin-vue": "^7.16.0",
+    "postcss": "^8.3.6",
+    "sanitize-html": "1.27.4",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0",
+    "tslib": "^2.3.1",
+    "vite": "^2.5.0",
+    "vite-plugin-components": "^0.13.2"
+  }
+}

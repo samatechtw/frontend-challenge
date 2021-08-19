@@ -1,0 +1,69 @@
+$white: #fff;
+$black: #000;
+$red: #ef466f;
+$green: #45b26b;
+$purple1: #9757d7;
+$purple2: #9267f9;
+$blue: #3772ff;
+$blue-hover: #2955bf;
+$text1: #777e90;
+$text2: #fcfcfd;
+$text3: #23262f;
+$text4: #353945;
+$text5: #141416;
+$text6: #b1b5c3;
+$border1: #e6e8ec;
+$bg1: #f4f5f6;
+
+@define-mixin flex-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@define-mixin flex-center-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@define-mixin title $size {
+  font-family: 'DMSans', 'Avenir', Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: $size;
+}
+
+@define-mixin medium $size {
+  font-family: 'DMSans', 'Avenir', Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: $size;
+}
+
+@define-mixin text $size {
+  font-family: 'Poppins', Garamond, serif;
+  font-weight: 400;
+  font-size: $size;
+}
+
+@define-mixin button {
+  @mixin flex-center;
+  @mixin title 14px;
+  background-color: $blue;
+  color: $text2;
+  height: 40px;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 90px;
+  padding: 0 16px;
+  transition: all 0.4s ease;
+  &:hover {
+    background-color: $blue-hover;
+  }
+  > a {
+    width: 100%;
+    height: 100%;
+    @mixin flex-center;
+  }
+}
