@@ -44,7 +44,7 @@ The app uses Vite and Vue3.
 #### api/nfts
 
 https://nft-test.tpa.finance/api/nfts
-```json
+```javascript
 [{
   "id": "number",
   "type": "string (ERC721 | ERC1155)",
@@ -73,10 +73,10 @@ https://nft-test.tpa.finance/api/nfts
 #### api/nft/<nft_id>
 
 https://nft-test.tpa.finance/api/nft/2
-```json
+```javascript
 {
   // All fields from objects in /api/nfts
-  "txs":[
+  "txs": [
     {
       "id": "number",
       "type": "string (tx.erc721_transfer, tx.erc721_approve, tx.erc721_mint, tx.post_sale, tx.buy, tx.cancel_sale]",
